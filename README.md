@@ -19,29 +19,39 @@ The methodology involves several steps:
 Stock price data for Apple Inc. was obtained from Yahoo Finance using the quantmod package in R.
 Simulated news headlines relevant to Apple were created to represent various sentiment scenarios for each trading day during the study period.
 
+
 2.] Sentiment Analysis:
 Sentiment scores were calculated for the news headlines using the sentimentr package. This included preprocessing the headlines and applying sentiment analysis techniques.
 
+
 3.] Data Merging:
 The stock price data and sentiment scores were merged into a single dataset based on the date, ensuring that each entry contained relevant stock price and sentiment information.
+
 
 4.] Exploratory Data Analysis (EDA):
 A correlation matrix was computed to explore relationships between stock prices, sentiment, and trading volume.
 Visualization techniques were applied to understand the trends and patterns in the data.
 
+
 5.] Modeling:
 A linear regression model was developed to examine the effect of sentiment and trading volume on the stock price.
 Time series models, including ARIMA and Prophet, were employed to forecast future stock price movements based on historical data.
+
 
 6.] Binary Classification:
 A binary classification approach was taken to classify stock price movements (increase or decrease) based on sentiment and trading volume.
 Analysis and Interpretation
 
+
 The analysis revealed the following insights:
 
+
 1.] Sentiment Scores: The sentiment analysis provided varying sentiment scores, reflecting the market's perception of Apple Inc. based on news headlines.
+
 2.] Regression Results: The linear regression model indicated that while trading volume significantly affects stock prices, sentiment did not show a statistically significant relationship in this context. The multiple R-squared value was relatively low, suggesting that other factors may influence stock prices.
+
 3.] Time Series Forecasting: The ARIMA and Prophet models produced forecasts indicating potential future price movements, which can be further refined with more comprehensive sentiment data and real-world events.
+
 4.] The correlation matrix indicated a weak positive correlation between sentiment and adjusted stock prices, while a stronger negative correlation was observed between trading volume and price.
 
 # Conclusion
